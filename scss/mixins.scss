@@ -1,0 +1,56 @@
+@mixin playfairNormalFontFamily {
+    font-family: $playfairFontFamily;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin playfairBoldFontFamily {
+    font-family: $playfairFontFamily;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin robotoLightFontFamily {
+    font-family: $robotoFontFamily;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin robotoNormalFontFamily {
+    font-family: $robotoFontFamily;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin robotoMediumFontFamily {
+    font-family: $robotoFontFamily;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@mixin robotoBoldFontFamily {
+    font-family: $robotoFontFamily;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin prataNormalFontFamily {
+    font-family: $prataFontFamily;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin line($width) {
+    content: '';
+    position: absolute;
+    width: $width;
+    height: 1px;
+    background-color: $linesColor;
+}
+
+@mixin footerRows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 101px;
+}

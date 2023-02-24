@@ -29,12 +29,10 @@ button {
   margin: auto;
 }
 
-/*********** header ***********/
 header {
   height: 75px;
 }
-
-.header__wrapper {
+header .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,8 +41,7 @@ header {
           justify-content: space-between;
   padding: 30px 0;
 }
-
-.logo {
+header .header__wrapper .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,8 +52,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.logo span {
+header .header__wrapper .logo span {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
@@ -65,8 +61,7 @@ header {
   letter-spacing: 0.14em;
   color: #555248;
 }
-
-.header__menu {
+header .header__wrapper .header__menu {
   width: 422px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,8 +73,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.header__menu-item {
+header .header__wrapper .header__menu a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -87,8 +81,7 @@ header {
   line-height: 16px;
   color: #555248;
 }
-
-.header__icons {
+header .header__wrapper .header__icons {
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,12 +93,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.selected {
+header .header__wrapper .header__icons .selected {
   position: relative;
 }
-
-.selected span {
+header .header__wrapper .header__icons .selected span {
   position: absolute;
   text-align: center;
   vertical-align: middle;
@@ -120,7 +111,6 @@ header {
   top: -5px;
 }
 
-/*********** watch__main ***********/
 .watch__main {
   background-image: url("../img/watch__main_bg.png");
   background-size: contain;
@@ -128,8 +118,7 @@ header {
   background-repeat: no-repeat;
   height: 750px;
 }
-
-.watch__main-wrapper {
+.watch__main .watch__main-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,18 +130,16 @@ header {
           align-items: center;
   padding: 0 98px 0 85px;
 }
-
-.description__title {
-  position: relative;
-  font-family: "Playfair Display";
+.watch__main .watch__main-wrapper .watch__main-description .description__title {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
+  position: relative;
   font-size: 45px;
   line-height: 60px;
   color: #1B1A17;
 }
-
-.description__title::before {
+.watch__main .watch__main-wrapper .watch__main-description .description__title:before {
   content: "";
   position: absolute;
   width: 50px;
@@ -161,9 +148,8 @@ header {
   top: 32px;
   left: -65px;
 }
-
-.watch__main-description h3 {
-  font-family: "Playfair Display";
+.watch__main .watch__main-wrapper .watch__main-description h3 {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -171,9 +157,8 @@ header {
   color: #1B1A17;
   margin: 16px 0 39px 0;
 }
-
-.watch__main-description p {
-  font-family: "Roboto";
+.watch__main .watch__main-wrapper .watch__main-description p {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -182,58 +167,59 @@ header {
   margin-bottom: 64px;
   width: 258px;
 }
-
-.watch__main-description button {
+.watch__main .watch__main-wrapper .watch__main-description button {
   width: 205px;
   height: 64px;
   background: #444240;
   padding: 26px 38px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
-.img__block {
+.watch__main .watch__main-wrapper .img__block {
   width: 500px;
   position: relative;
 }
-
-.img__block img {
+.watch__main .watch__main-wrapper .img__block img {
   width: 488px;
 }
-
-.img__block span {
+.watch__main .watch__main-wrapper .img__block span {
   position: absolute;
-  font-family: "Prata";
+  font-family: "Prata", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #1B1A17;
 }
-
-.watch__prace {
+.watch__main .watch__main-wrapper .img__block .watch__prace {
   top: 138px;
   left: -70px;
 }
-
-.watch__prace img {
+.watch__main .watch__main-wrapper .img__block .watch__prace img {
   width: 9.6px;
 }
-
-.watch__diametr {
+.watch__main .watch__main-wrapper .img__block .watch__prace:after {
+  margin-left: 15px;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #8B8371;
+  top: 12px;
+}
+.watch__main .watch__main-wrapper .img__block .watch__diametr {
   bottom: 142px;
   width: 122px;
   right: -74px;
 }
-
-.watch__prace::after,
-.watch__diametr::before {
+.watch__main .watch__main-wrapper .img__block .watch__diametr:before {
+  left: -65px;
   content: "";
   position: absolute;
   width: 50px;
@@ -242,35 +228,24 @@ header {
   top: 12px;
 }
 
-.watch__prace::after {
-  margin-left: 15px;
-}
-
-.watch__diametr::before {
-  left: -65px;
-}
-
-/*********** popular__models ***********/
 .popular__models {
   background-color: #ffffff;
   padding-top: 66px;
   padding-bottom: 86px;
 }
-
-.models__title {
+.popular__models .popular__models-wrapper .models__title {
   text-align: center;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 43px;
   color: #1B1A17;
 }
-
-.see__all {
+.popular__models .popular__models-wrapper .see__all {
   width: 104px;
   float: right;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -279,8 +254,7 @@ header {
   padding-bottom: 12px;
   border-bottom: 1px solid #C4C0B6;
 }
-
-.popular__models-items {
+.popular__models .popular__models-wrapper .popular__models-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,8 +265,7 @@ header {
       flex-wrap: wrap;
   margin-top: 55px;
 }
-
-.popular__models-item {
+.popular__models .popular__models-wrapper .popular__models-items li {
   width: 370px;
   height: 467px;
   padding: 40px 29px 40px 28px;
@@ -303,9 +276,8 @@ header {
   background-position: 50% 57%;
   margin-top: 10px;
 }
-
-.popular__models-item h3 {
-  font-family: "Playfair Display";
+.popular__models .popular__models-wrapper .popular__models-items li h3 {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -314,9 +286,8 @@ header {
   color: rgba(27, 26, 23, 0.82);
   margin-bottom: 10px;
 }
-
-.model__price {
-  font-family: "Prata";
+.popular__models .popular__models-wrapper .popular__models-items li span {
+  font-family: "Prata", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -324,18 +295,15 @@ header {
   color: rgba(27, 26, 23, 0.82);
   position: relative;
 }
-
-.popular__models-item img {
-  width: 313px;
-}
-
-.model__price img {
+.popular__models .popular__models-wrapper .popular__models-items li span img {
   width: 7.38px;
   margin-left: 4px;
 }
-
-.more {
-  font-family: "Playfair Display";
+.popular__models .popular__models-wrapper .popular__models-items li img {
+  width: 313px;
+}
+.popular__models .popular__models-wrapper .popular__models-items li .more {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -344,8 +312,7 @@ header {
   color: #1B1A17;
   left: 48px;
 }
-
-.more::before {
+.popular__models .popular__models-wrapper .popular__models-items li .more:before {
   content: "";
   position: absolute;
   width: 30px;
@@ -355,7 +322,6 @@ header {
   left: -48px;
 }
 
-/*********** banner ***********/
 .banner {
   height: 519px;
   background-color: #FDFDFB;
@@ -363,8 +329,7 @@ header {
   background-position: right center, left center;
   background-repeat: no-repeat, no-repeat;
 }
-
-.banner__wrapper {
+.banner .banner__wrapper {
   padding: 52px 124px 52px 79px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,12 +341,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.banner__photo {
+.banner .banner__wrapper .banner__photo {
   position: relative;
 }
-
-.pagination {
+.banner .banner__wrapper .banner__photo img {
+  width: 521px;
+}
+.banner .banner__wrapper .banner__photo .pagination {
   position: absolute;
   right: 20%;
   bottom: -35px;
@@ -396,35 +362,27 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.banner__photo img {
-  width: 521px;
-}
-
-.pagination img {
+.banner .banner__wrapper .banner__photo .pagination img {
   width: 5px;
 }
-
-.pagination span {
-  font-family: "Prata";
+.banner .banner__wrapper .banner__photo .pagination span {
+  font-family: "Prata", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: rgba(27, 26, 23, 0.82);
 }
-
-.banner__description h2 {
-  font-family: "Playfair Display";
+.banner .banner__wrapper .banner__description h2 {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 43px;
   color: #1B1A17;
 }
-
-.banner__description p {
-  font-family: "Roboto";
+.banner .banner__wrapper .banner__description p {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -433,30 +391,27 @@ header {
   width: 376px;
   margin: 38px 0 45px 0;
 }
-
-.banner__description button {
+.banner .banner__wrapper .banner__description button {
   background: #D4B098;
   width: 205px;
   height: 64px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
-/*********** news ***********/
 .news {
   height: 631px;
   padding-top: 81px;
   padding-bottom: 90px;
   background-color: #ffffff;
 }
-
-.news__wrapper {
+.news .news__wrapper {
   height: 460px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,22 +420,19 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.news__description {
+.news .news__wrapper .news__description {
   margin-top: 134px;
 }
-
-.news__description h2 {
-  font-family: "Playfair Display";
+.news .news__wrapper .news__description h2 {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 43px;
   color: #1B1A17;
 }
-
-.news__description p {
-  font-family: "Roboto";
+.news .news__wrapper .news__description p {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -489,8 +441,7 @@ header {
   width: 376px;
   margin: 40px 0 120px 0;
 }
-
-.social__icons {
+.news .news__wrapper .news__description .social__icons {
   width: 93px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,8 +453,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.news__photos {
+.news .news__wrapper .news__photos {
   width: 629px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,8 +462,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.news__photos-left {
+.news .news__wrapper .news__photos .news__photos-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,22 +474,26 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.news__photos-left img {
+.news .news__wrapper .news__photos .news__photos-left img {
   width: 242px;
 }
-
-.news__photos-right {
+.news .news__wrapper .news__photos .news__photos-right {
   width: 377px;
 }
 
-/*********** footer ***********/
 footer {
   height: 275px;
   background-color: #444240;
 }
-
-.footer__wrapper {
+footer a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+footer .footer__wrapper {
   padding: 67px 85px 67px 83px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,8 +502,18 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.footer__logo a {
+footer .footer__wrapper h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+footer .footer__wrapper .footer__logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,49 +525,45 @@ footer {
           align-items: center;
   width: 130px;
 }
-
-.footer__logo span {
-  font-family: "Playfair Display";
+footer .footer__wrapper .footer__logo span {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.14em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
-.footer__phone,
-.footer__email,
-.buyers a,
-.about a,
-.payment a {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.footer__phone {
+footer .footer__wrapper .footer__logo .footer__phone {
   margin: 32px 0 15px 0;
 }
-
-.footer__wrapper h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 33px;
+footer .footer__wrapper .buyers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 101px;
 }
-
-.buyers ul,
-.about ul,
-.payment ul {
+footer .footer__wrapper .about ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 101px;
+}
+footer .footer__wrapper .payment ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
